@@ -40,7 +40,7 @@ public class BubbleSort {
 
     public int[] sort(int[] array) {
         for (int i = 0; i < array.length; i++) { // 重复n次
-            for (int j = 0; j < array.length-1-i; j++) { // 每次冒泡从索引为0开始，结束部分是未排序的倒数第二个
+            for (int j = 0; j < array.length-i-1; j++) { // 每次冒泡从索引为0开始，结束部分是「未排序的」倒数第二个
                 if (array[j] > array[j+1]) {
                     int temp = array[j];
                     array[j] = array[j+1];
@@ -55,7 +55,7 @@ public class BubbleSort {
     public int[] sort2(int[] array) {
         for (int i = 0; i < array.length; i++) { // 重复n次
             boolean exit = true; // 能否退出的标志
-            for (int j = 0; j < array.length-1-i; j++) { // 每次冒泡从索引为0开始，结束部分是未排序的倒数第二个
+            for (int j = 0; j < array.length-i-1; j++) { // 每次冒泡从索引为0开始，结束部分是「未排序」的倒数第二个
                 if (array[j] > array[j+1]) {
                     int temp = array[j];
                     array[j] = array[j+1];
