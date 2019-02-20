@@ -1,4 +1,4 @@
-package com.java.org.algo11_sort;
+package com.java.org.sort1;
 
 import org.junit.Test;
 
